@@ -1,5 +1,5 @@
-function switchCase(letter) {
-    var animals = letter;
+function switchCase (letter){
+    var animals = letter; 
     switch (animals) {
         case "a":
             animals = "antelope";
@@ -14,11 +14,16 @@ function switchCase(letter) {
             animals = "stuff";
             break;
     }
+
+
     return animals;
 }
+
 console.log(switchCase("a"));
 console.log(switchCase("b"));
 console.log(switchCase("c"));
 console.log(switchCase("d"));
 console.log(switchCase(4));
+
+
 module.exports = switchCase; 

@@ -1,6 +1,6 @@
-function switchCaseSequential(num) {
+function switchCaseSequential (num) {
     var answer = num;
-    switch(answer) {
+    switch (answer){
         case 1:
         case 2:
         case 3:
@@ -15,10 +15,12 @@ function switchCaseSequential(num) {
         case 8:
         case 9:
             answer = "High";
-            break
+            break;
     }
+
     return answer;
 }
+
 console.log(switchCaseSequential(1));
 console.log(switchCaseSequential(2));
 console.log(switchCaseSequential(3));
@@ -28,4 +30,5 @@ console.log(switchCaseSequential(6));
 console.log(switchCaseSequential(7));
 console.log(switchCaseSequential(8));
 console.log(switchCaseSequential(9));
+
 module.exports = switchCaseSequential; 

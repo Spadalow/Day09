@@ -1,11 +1,14 @@
 function myDoWhile () {
-    var myNumbers = ""; str = 0;
-    do {
-        str = str + 1;
-        myNumbers = myNumbers + str + ", ";
 
-    } while (str < 9);
+    var myNumbers = "";
+
+    var i = 0;
+    do {
+        myNumbers += i + ", ";
+        i++;
+    }while (i < 10)
     console.log(myNumbers);
 }
-console.log(myDoWhile());
-module.exports= myDoWhile
+myDoWhile();
+
+module.exports = myDoWhile; 

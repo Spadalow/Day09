@@ -1,26 +1,25 @@
-function myForLoop1() {
-    var evenNumbers = ""; str1 = 0;
-    for (str1 = 0; str1 <= 8; str1 += 2) {
-        evenNumbers += str1 + ", ";
-        if (str1 === 8) {
-            return evenNumbers += str1;
-        }
+var evenNumbers = "";
+var zarez = ", ";
+function myForLoop1 () {
+    for (var result1 = 0; result1 <= 8; result1 += 2){
+        evenNumbers += result1 + ", "; 
     }
     console.log(evenNumbers);
 }
-function myForLoop2() {
-    var evenInverseNumbers = ""; str2 = 8;
-    for (var str2 = 8; str2 >= 0; str2 -= 2) {
-        evenInverseNumbers += str2 + ", ";
-        if (str2 === 0) {
-            return evenInverseNumbers;
-        }
+
+var evenInverseNumbers = "";
+function myForLoop2 () {
+    for (var result2 = 8; result2 >= 0; result2 -= 2){
+        evenInverseNumbers += result2;
+
     }
     console.log(evenInverseNumbers);
 }
-console.log(myForLoop1());
-console.log(myForLoop2());
+
+myForLoop1();
+myForLoop2();
+
 module.exports = {
     myForLoop1,
     myForLoop2
-};
+}; 
